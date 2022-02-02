@@ -17,6 +17,7 @@ class Chart extends StatelessWidget {
           measureFn: (b, _) => b.time.hour)
     ];
 
+    //ff
     return charts.BarChart(
       series,
       animate: true,
