@@ -146,45 +146,32 @@ class List_Data extends StatelessWidget {
           child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: new DataTable(
+              dataRowHeight: 70,
+              headingRowHeight: 60,
+              dataTextStyle: TextStyle(
+                color: Colors.grey,
+                fontSize: 10,
+                fontFamily: 'Roboto',
+              ),
               columns: <DataColumn>[
                 DataColumn(
                   label: Text(
                     "Inisial",
-                    style: TextStyle(
-                      color: Colors.grey[900],
-                      fontSize: 12,
-                      fontFamily: 'Roboto',
-                    ),
                   ),
                 ),
                 DataColumn(
                   label: Text(
                     "Nama Cabang",
-                    style: TextStyle(
-                      color: Colors.grey[900],
-                      fontSize: 12,
-                      fontFamily: 'Roboto',
-                    ),
                   ),
                 ),
                 DataColumn(
                   label: Text(
                     "Status",
-                    style: TextStyle(
-                      color: Colors.grey[900],
-                      fontSize: 12,
-                      fontFamily: 'Roboto',
-                    ),
                   ),
                 ),
                 DataColumn(
                   label: Text(
                     "Provider",
-                    style: TextStyle(
-                      color: Colors.grey[900],
-                      fontSize: 12,
-                      fontFamily: 'Roboto',
-                    ),
                   ),
                 ),
               ],
@@ -195,41 +182,21 @@ class List_Data extends StatelessWidget {
                         DataCell(
                           Text(
                             name.inisial,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10,
-                              fontFamily: 'Roboto',
-                            ),
                           ),
                         ),
                         DataCell(
                           Text(
                             name.namacabang,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10,
-                              fontFamily: 'Roboto',
-                            ),
                           ),
                         ),
                         DataCell(
                           Text(
                             name.status,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10,
-                              fontFamily: 'Roboto',
-                            ),
                           ),
                         ),
                         DataCell(
                           Text(
                             name.provider,
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10,
-                              fontFamily: 'Roboto',
-                            ),
                           ),
                         )
                       ],
